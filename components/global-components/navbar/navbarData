@@ -1,0 +1,158 @@
+const navbarData = [
+  {
+    id: 1,
+    title: "Start",
+    path: "/",
+  },
+  {
+    id: 2,
+    title: "Organizacja",
+    path: "/organizacja",
+    submenu: [
+      {
+        id: 1,
+        title: "O nas",
+        path: "/o-nas",
+      },
+      {
+        id: 2,
+        title: "Historia",
+        path: "/historia",
+      },
+      {
+        id: 3,
+        title: "Struktura",
+        path: "/struktura",
+      },
+      {
+        id: 4,
+        title: "Dokumenty",
+        path: "/dokumenty",
+      },
+      {
+        id: 5,
+        title: "Współpraca",
+        path: "/wspolpraca",
+      },
+      {
+        id: 6,
+        title: "Ludzie organizacji",
+        path: "/ludzie-organizacji",
+      },
+      {
+        id: 7,
+        title: "PSEA",
+        path: "/psea",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Projekty",
+    path: "/projekty",
+    submenu: [
+      {
+        id: 1,
+        title: "UNICEF 2022-2024",
+        path: "/o-nas",
+      },
+      {
+        id: 2,
+        title: "Kodeks etyczny",
+        path: "/kodeks-etyczny",
+      },
+      {
+        id: 3,
+        title: "Konferencja",
+        path: "/konferencja",
+      },
+      {
+        id: 4,
+        title: "Kampania",
+        path: "/kampania",
+      },
+      {
+        id: 5,
+        title: "Kampania",
+        path: "/kampania",
+      },
+      {
+        id: 6,
+        title: "Circle Study",
+        path: "/circle-study",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Superwizja",
+    path: "/superwizja",
+    submenu: [
+      {
+        id: 1,
+        title: "Czym jest superwizja pracy socjalnej?",
+        path: "/czym-jest-superwizja-pracy-socjalnej",
+      },
+      {
+        id: 2,
+        title: "Jak wprowadzić superwizję do organizacji?",
+        path: "/jak-wprowadzic-superwizje-do-organizacji",
+      },
+      {
+        id: 3,
+        title: "Jak finansować superwizję?",
+        path: "/jak-finansowac-superwizje",
+      },
+      {
+        id: 4,
+        title: "Standardy superwizji",
+        path: "/standardy-superwizji",
+      },
+      {
+        id: 5,
+        title: "Lista superwizorów pracy socjalnej",
+        path: "/lista-superwizorow-pracy-socjalnej",
+      },
+      {
+        id: 6,
+        title:
+          "Lista superwizorów niecertyfikowanych i metodyków pracy socjalnej",
+        path: "/lista-superwizorow-niecertyfikowanych-i-metodykow-pracy-socjalnej",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Biblioteka",
+    path: "/biblioteka",
+  },
+  {
+    id: 6,
+    title: "Oferta",
+    path: "/oferta",
+    submenu: [
+      {
+        id: 1,
+        title: "Superwizja",
+        path: "/oferta - superwizja",
+      },
+      {
+        id: 2,
+        title: "Szkoolenia",
+        path: "/szkolenia",
+      },
+      {
+        id: 3,
+        title: "Study circle",
+        path: "/oferta/study-circle",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Kontakt",
+    path: "/kontakt",
+  },
+];
+
+export default navbarData;
