@@ -66,7 +66,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm overflow-scroll"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm"
             >
               {navbarData.map((item, index) => (
                 <li
@@ -74,10 +74,6 @@ const Navbar = () => {
                   onClick={(e) => {
                     toggleSubmenu(e);
                     handleMouseEnter(index);
-                    console.log("---index---");
-                    console.log(index);
-                    console.log("---currentIndex---");
-                    console.log(currentIndex);
                   }}
                 >
                   <a>{item.title}</a>
