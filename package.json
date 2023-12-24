@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10",
+    "daisyui": "^4.4.23",
     "postcss": "^8",
     "tailwindcss": "^3"
   }
