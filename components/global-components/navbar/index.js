@@ -31,6 +31,18 @@ const Navbar = () => {
     setIsMobileMenuActive(false);
   };
 
+  const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
+  const toggleSubmenu = (e) => {
+    e.preventDefault();
+    setIsSubmenuVisible(!isSubmenuVisible);
+  };
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleMouseEnter = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <div className="bg-white border-b-2 border-b-gray-100 text-xl antialiased fixed w-screen h-28 flex justify-between items-center px-10 lg:px-16 py-4  top-0 left-0 z-50">
       <div className="navbar bg-base-100">
@@ -56,18 +68,30 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm overflow-scroll"
             >
-              {navbarData.map((item) => (
-                <li>
+              {navbarData.map((item, index) => (
+                <li
+                  key={index}
+                  onClick={(e) => {
+                    toggleSubmenu(e);
+                    handleMouseEnter(index);
+                    console.log("---index---");
+                    console.log(index);
+                    console.log("---currentIndex---");
+                    console.log(currentIndex);
+                  }}
+                >
                   <a>{item.title}</a>
-                  {item.submenu && (
-                    <ul className="p-2">
-                      {item.submenu.map((subitem) => (
-                        <li>
-                          <a>{subitem.title}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  {item.submenu &&
+                    isSubmenuVisible &&
+                    currentIndex === index && (
+                      <ul className="p-2">
+                        {item.submenu.map((subitem) => (
+                          <li>
+                            <a>{subitem.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                 </li>
               ))}
 
