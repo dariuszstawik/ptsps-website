@@ -54,7 +54,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm overflow-y-scroll h-64 "
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm overflow-scroll h-full"
             >
               {navbarData.map((item) => (
                 <li>
