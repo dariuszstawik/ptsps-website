@@ -5,13 +5,13 @@ export default function SectionTitle({ children, isWhite, isAlignedLeft }) {
         !isAlignedLeft && "justify-center items-center"
       } gap-2`}
     >
-      <p
+      {/* <p
         className={`${
           isWhite ? "text-white" : "text-primaryBlue"
         } text-lg my-0`}
       >
         PTSPS
-      </p>
+      </p> */}
       <h2
         className={`${isAlignedLeft ? "text-left" : "text-center"} ${
           isWhite && "text-white"
@@ -21,7 +21,7 @@ export default function SectionTitle({ children, isWhite, isAlignedLeft }) {
         {children}
       </h2>
       <div
-        className={`mt-4 w-28 h-1 rounded-sm ${
+        className={`mt-4 w-20 h-1 rounded-sm ${
           isWhite ? "bg-primaryGreen" : "bg-primaryBlue"
         }`}
       />

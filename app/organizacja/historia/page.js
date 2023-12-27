@@ -1,5 +1,7 @@
 import PageHeader from "@/components/global-components/page-header";
+import SectionTitle from "@/components/global-components/section-title";
 import SingleArticle from "@/components/global-components/single-article";
+import Timeline from "@/components/historia-page/timeline";
 import { client } from "@/lib/contentful/client";
 
 async function getContentfulContent() {
@@ -16,12 +18,16 @@ export default async function HistoriaPage() {
   return (
     <div>
       <PageHeader>Historia</PageHeader>
-      <SingleArticle
+      <div>
+        <SectionTitle>Historia PTSPS</SectionTitle>
+        {/* <SingleArticle
         title={content.fields.title}
         lead={content.fields.lead}
         // content={documentToReactComponents(content.fields.content)}
         img={content.fields.obraz ? content.fields.image : ""}
-      ></SingleArticle>
+      ></SingleArticle> */}
+        <Timeline />
+      </div>
     </div>
   );
 }

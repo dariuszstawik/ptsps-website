@@ -1,3 +1,4 @@
+import Footer from "@/components/global-components/footer";
 import FullwidthParagraphWithImageOnLeft from "@/components/global-components/fullwidth-paragraph-with-Image-on-left";
 import CounterSection from "@/components/main-page/counter-section";
 import HeroSection from "@/components/main-page/hero-section";

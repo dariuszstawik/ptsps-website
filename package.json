@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
@@ -16,6 +17,7 @@
     "lucide-react": "^0.299.0",
     "next": "13.5.6",
     "react": "^18",
+    "react-awesome-reveal": "^4.2.7",
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "tailwind-merge": "^2.1.0",

@@ -18,6 +18,7 @@ import {
 import { cn } from "@/lib/utils";
 import Logo from "../logo";
 import Hamburger from "../hamburger";
+import { Facebook, Linkedin } from "lucide-react";
 
 const Navbar = () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
@@ -48,7 +49,7 @@ const Navbar = () => {
     <>
       <div className="bg-white border-b-2 border-b-gray-100 text-xl antialiased fixed w-screen h-28 lg:flex justify-between items-center px-10 lg:px-16 py-4  top-0 left-0 z-50 hidden">
         <Logo closeMobileMenu={closeMobileMenu} />
-        <div className="pl-16 w-full flex justify-end items-center gap-6 h-28">
+        <div className="pl-16 w-full flex justify-end items-center gap-4 h-28">
           <NavigationMenu>
             <NavigationMenuList>
               <ul
@@ -109,6 +110,10 @@ const Navbar = () => {
               </ul>
             </NavigationMenuList>
           </NavigationMenu>
+        </div>
+        <div className="flex ml-10 gap-2">
+          <Facebook className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
+          <Linkedin className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
         </div>
         <Hamburger
           hasCloseIcon={isMobileMenuActive ? true : false}

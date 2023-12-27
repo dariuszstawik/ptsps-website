@@ -1,22 +1,19 @@
 export default function FullwidthParagraphWithImageOnLeft() {
   return (
-    <section className="relative py-20 bg-primaryBlue">
+    <section className="relative py-20 bg-primaryBlue text-white">
       <div className="container px-4 mx-auto">
         <div className="w-full lg:w-1/2 ml-auto mb-12">
           <div className="lg:max-w-md lg:ml-auto">
             <h2 className="mb-4 lg:mb-6 text-4xl md:text-5xl mt-3 font-bold font-heading">
               Lorem Ipsum dolor sit amet
             </h2>
-            <p
-              className="mb-8 text-lg text-gray-500 leading-loose"
-              contenteditable="false"
-            >
+            <p className="mb-8 text-lg leading-loose" contenteditable="false">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque massa nibh, pulvinar vitae aliquet nec, accumsan
               aliquet orci.
             </p>
             <div className="flex items-start py-4">
-              <div className="mr-5 text-gray-500">
+              <div className="mr-5 text-gray-100">
                 <svg
                   className="w-10 h-10"
                   viewbox="0 0 48 48"
@@ -31,13 +28,13 @@ export default function FullwidthParagraphWithImageOnLeft() {
                 </svg>
               </div>
               <div className="max-w-sm">
-                <h3 className="mb-2 text-xl leading-loose text-gray-600">
+                <h3 className="mb-2 text-xl leading-loose text-gray-100">
                   Quick problem-solving contact
                 </h3>
               </div>
             </div>
             <div className="flex items-start py-4">
-              <div className="mr-5 text-gray-500">
+              <div className="mr-5 text-gray-100">
                 <svg
                   className="w-10 h-10"
                   viewbox="0 0 48 48"
@@ -52,13 +49,13 @@ export default function FullwidthParagraphWithImageOnLeft() {
                 </svg>
               </div>
               <div className="max-w-sm">
-                <h3 className="mb-2 text-xl leading-loose text-gray-600">
+                <h3 className="mb-2 text-xl leading-loose text-gray-100">
                   Making changes simple and easy
                 </h3>
               </div>
             </div>
             <div className="flex items-start py-4">
-              <div className="mr-5 text-gray-500">
+              <div className="mr-5 text-gray-100">
                 <svg
                   className="w-10 h-10"
                   viewbox="0 0 48 48"
@@ -73,7 +70,7 @@ export default function FullwidthParagraphWithImageOnLeft() {
                 </svg>
               </div>
               <div className="max-w-sm">
-                <h3 className="mb-2 text-xl leading-loose text-gray-600">
+                <h3 className="mb-2 text-xl leading-loose text-gray-100">
                   Exchangeable at any time
                 </h3>
               </div>

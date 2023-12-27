@@ -1,18 +1,20 @@
-export default function ProjectCard() {
+import Image from "next/image";
+
+export default function LibraryCard({ title, img, file }) {
   return (
     <div>
       <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm xl:w-96">
-        <img
-          alt="Office"
-          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          className="h-56 w-full object-cover"
+        <Image
+          className="w-contain object-cover h-[40%] rounded-t-lg"
+          src={img ? `https:${img.fields.file.url}` : ""}
+          width={img?.fields?.file?.details?.image?.width}
+          height={img?.fields?.file?.details?.image?.height}
+          alt={img?.fields?.description ? img.fields.description : ""}
         />
 
         <div class="p-4 sm:p-6">
           <a href="#">
-            <h3 className="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h3>
+            <h3 className="text-lg font-medium text-gray-900">{title} </h3>
           </a>
 
           {/* <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
@@ -24,10 +26,10 @@ export default function ProjectCard() {
           </p> */}
 
           <a
-            href="#"
-            className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-primaryBlue"
+            href={file}
+            className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
           >
-            Find out more
+            Pobierz
             <span
               ariaHidden="true"
               className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
