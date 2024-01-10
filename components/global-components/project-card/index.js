@@ -27,7 +27,7 @@ export default function ProjectCard() {
             href="#"
             className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-primaryBlue"
           >
-            Find out more
+            Dowiedz się więcej
             <span
               ariaHidden="true"
               className="block transition-all group-hover:ms-0.5 rtl:rotate-180"

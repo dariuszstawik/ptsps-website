@@ -55,56 +55,59 @@ const Navbar = () => {
               <ul
                 className={
                   isMobileMenuActive
-                    ? " list-none absolute z-40 w-screen top-full left-0 bg-gray-50 py-4 flex flex-col justify-center align-center items-center gap-10 lg:static lg:flex-row"
-                    : " list-none flex-col justify-center align-center items-center gap-10 lg:flex-row my-4 hidden lg:flex lg:justify-end ml-4"
+                    ? "list-none absolute z-40 w-screen top-full left-0 bg-gray-50 py-4 flex flex-col justify-center align-center items-center gap-10 lg:static lg:flex-row"
+                    : "list-none flex-col justify-center align-center items-center gap-6 lg:flex-row my-4 hidden lg:flex lg:justify-end ml-4"
                 }
               >
                 {navbarData.map((nav) => {
                   const isActive = pathname === nav.path;
 
                   return (
-                    <NavigationMenuItem key={nav.id}>
-                      {nav.submenu ? (
-                        <>
-                          <NavigationMenuTrigger>
-                            {nav.title}
-                          </NavigationMenuTrigger>
-                          <NavigationMenuContent>
-                            <ul className="grid gap-3 p-6 md:w-[400px] lg:min-w-[900px] lg:grid-cols-[.75fr_1fr]">
-                              {nav.submenu.map((subnav) => {
-                                return (
-                                  <li className="relative" key={subnav.id}>
-                                    <Link
-                                      href={subnav.path}
-                                      className={cn(
-                                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                      )}
-                                    >
-                                      <div className="text-sm font-medium leading-none">
-                                        {subnav.title}
-                                      </div>
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </NavigationMenuContent>{" "}
-                        </>
-                      ) : (
-                        <>
-                          <Link
-                            href={nav.path}
-                            className={cn(
-                              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            )}
-                          >
-                            <div className="text-sm font-medium leading-none">
+                    nav.isVisible && (
+                      <NavigationMenuItem key={nav.id}>
+                        {nav.submenu ? (
+                          <>
+                            <NavigationMenuTrigger className="text-base">
                               {nav.title}
-                            </div>
-                          </Link>
-                        </>
-                      )}
-                    </NavigationMenuItem>
+                            </NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                              <ul className="grid gap-3 p-6 md:w-[400px] lg:min-w-[900px] lg:grid-cols-[.75fr_1fr]">
+                                {nav.submenu.map(
+                                  (subnav) =>
+                                    subnav.isVisible && (
+                                      <li className="relative" key={subnav.id}>
+                                        <Link
+                                          href={subnav.path}
+                                          className={cn(
+                                            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                          )}
+                                        >
+                                          <div className="text-sm font-medium leading-none">
+                                            {subnav.title}
+                                          </div>
+                                        </Link>
+                                      </li>
+                                    )
+                                )}
+                              </ul>
+                            </NavigationMenuContent>
+                          </>
+                        ) : (
+                          <>
+                            <Link
+                              href={nav.path}
+                              className={cn(
+                                "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              )}
+                            >
+                              <div className="text-base font-medium leading-none">
+                                {nav.title}
+                              </div>
+                            </Link>
+                          </>
+                        )}
+                      </NavigationMenuItem>
+                    )
                   );
                 })}
               </ul>
@@ -112,8 +115,10 @@ const Navbar = () => {
           </NavigationMenu>
         </div>
         <div className="flex ml-10 gap-2">
-          <Facebook className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
-          <Linkedin className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
+          {/* <Facebook className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
+          <Linkedin className="text-white bg-primaryBlue rounded w-10 h-10 p-2" /> */}
+          <img src="/facebook.svg" alt="facebook" className="w-12 h-12 p-2" />
+          <img src="/linkedin.svg" alt="linkedin" className="w-12 h-12 p-2" />
         </div>
         <Hamburger
           hasCloseIcon={isMobileMenuActive ? true : false}
@@ -149,33 +154,39 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96 text-sm"
               >
-                {navbarData.map((item, index) => (
-                  <li
-                    key={index}
-                    onClick={(e) => {
-                      toggleSubmenu(e);
-                      handleMouseEnter(index);
-                    }}
-                  >
-                    <a>{item.title}</a>
-                    {item.submenu &&
-                      isSubmenuVisible &&
-                      currentIndex === index && (
-                        <ul className="p-2">
-                          {item.submenu.map((subitem) => (
-                            <li>
-                              <a>{subitem.title}</a>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                  </li>
-                ))}
+                {navbarData.map(
+                  (item, index) =>
+                    item.isVisible && (
+                      <li
+                        key={index}
+                        onClick={(e) => {
+                          toggleSubmenu(e);
+                          handleMouseEnter(index);
+                        }}
+                      >
+                        <a href={item.path}>{item.title}</a>
+                        {item.submenu &&
+                          isSubmenuVisible &&
+                          currentIndex === index && (
+                            <ul className="p-2">
+                              {item.submenu.map(
+                                (subitem, subindex) =>
+                                  subitem.isVisible && (
+                                    <li key={subindex}>
+                                      <a href={subitem.path}>{subitem.title}</a>
+                                    </li>
+                                  )
+                              )}
+                            </ul>
+                          )}
+                      </li>
+                    )
+                )}
               </ul>
             </div>
             <Logo />
           </div>
-          <div className="navbar-center hidden lg:flex">
+          {/* <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               {navbarData.map((item, index) =>
                 item.submenu ? (
@@ -198,10 +209,10 @@ const Navbar = () => {
                 )
               )}
             </ul>
-          </div>
-          <div className="navbar-end">
+          </div> */}
+          {/* <div className="navbar-end">
             <a className="btn">Button</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
@@ -209,79 +220,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div className="bg-white border-b-2 border-b-gray-100 text-xl antialiased fixed w-screen h-28 flex justify-between items-center px-10 lg:px-16 py-4  top-0 left-0 z-50">
-<Logo closeMobileMenu={closeMobileMenu} />
-<div className="pl-16 w-full flex justify-end items-center gap-6 h-28">
-  <NavigationMenu>
-    <NavigationMenuList>
-      <ul
-        className={
-          isMobileMenuActive
-            ? " list-none absolute z-40 w-screen top-full left-0 bg-gray-50 py-4 flex flex-col justify-center align-center items-center gap-10 lg:static lg:flex-row"
-            : " list-none flex-col justify-center align-center items-center gap-10 lg:flex-row my-4 hidden lg:flex lg:justify-end ml-4"
-        }
-      >
-        {navbarData.map((nav) => {
-          const isActive = pathname === nav.path;
-
-          return (
-            <NavigationMenuItem key={nav.id}>
-              {nav.submenu ? (
-                <>
-                  <NavigationMenuTrigger>
-                    {nav.title}
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-6 md:w-[400px] lg:min-w-[900px] lg:grid-cols-[.75fr_1fr]">
-                      {nav.submenu.map((subnav) => {
-                        return (
-                          <li className="relative" key={subnav.id}>
-                          
-                            <Link
-                              href={subnav.path}
-                              className={cn(
-                                "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              )}
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                {subnav.title}
-                              </div>
-                            </Link>
-
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </NavigationMenuContent>{" "}
-                </>
-              ) : (
-                <>
-
-                  <Link
-                    href={nav.path}
-                    className={cn(
-                      "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                    )}
-                  >
-                    <div className="text-sm font-medium leading-none">
-                      {nav.title}
-                    </div>
-                  </Link>
-
-                </>
-              )}
-            </NavigationMenuItem>
-          );
-        })}
-      </ul>
-    </NavigationMenuList>
-  </NavigationMenu>
-</div>
-<Hamburger
-  hasCloseIcon={isMobileMenuActive ? true : false}
-  toggleMobileMenu={toggleMobileMenu}
-/>
-</div> */
-}

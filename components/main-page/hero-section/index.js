@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="xl:h-screen relative flex flex-col justify-center items-center bg-[url('/wspolne.jpg')] bg-cover before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-darkBlue before:opacity-80">
       <div className="w-[60%] h-full flex flex-col justify-center items-center gap-6">
-        <h1 className="text-5xl font-bold text-white z-40 text-center leading-relaxed">
+        <h1 className="text-5xl font-bold text-white z-40 text-center leading-relaxed uppercase">
           Wyznaczamy nowe kierunki superwizji pracy socjalnej
         </h1>
         <div className="flex flex-col justify-center items-center gap-4">
@@ -19,7 +19,7 @@ export default function HeroSection() {
         <Button>Poznaj nas</Button>
         {/* <div className="relative w-full h-20"> */}
         <div className="absolute bottom-16 right-16">
-          <NewsCard />
+          {/* <NewsCard /> */}
           {/* </div> */}
         </div>
       </div>

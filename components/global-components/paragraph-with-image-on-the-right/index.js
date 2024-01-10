@@ -1,10 +1,11 @@
 "use client";
+
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from "../section-title";
 import Button from "../button";
 import Link from "next/link";
 
-export default function ParagraphWithImageOnTheLeft({
+export default function ParagraphWithImageOnTheRight({
   title,
   children,
   img,
@@ -14,12 +15,14 @@ export default function ParagraphWithImageOnTheLeft({
   buttonLink,
 }) {
   return (
-    <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
+    <div
+      className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row-reverse`}
+    >
       <Slide
-        direction="left"
+        direction="right"
         delay={200}
         triggerOnce
-        className="flex justify-center items-start w-1/2"
+        className="flex justify-center items-start"
       >
         <div>
           {contentfulImg && (
@@ -34,7 +37,7 @@ export default function ParagraphWithImageOnTheLeft({
                   ? contentfulImg.fields.file.description
                   : ""
               }
-              style={{ width: "400px", height: "440px", objectFit: "cover" }}
+              style={{ width: "600px", height: "440px", objectFit: "cover" }}
               className="rounded"
             />
           )}
@@ -42,19 +45,19 @@ export default function ParagraphWithImageOnTheLeft({
             <img
               src={img}
               alt={alt ? alt : ""}
-              // style={{ width: "600px", height: "440px", objectFit: "cover" }}
+              //   style={{ width: "600px", height: "440px", objectFit: "cover" }}
               className="rounded"
             />
           )}
           {/* <img src="/documents31.jpg" className="rounded" /> */}
         </div>
       </Slide>
-      <div className="w-1/2 mx-8 lg:ml-20 lg:mr-32 flex flex-col gap-0">
+      <div className="w-2/3 mx-10 lg:ml-24 lg:mr-32 flex flex-col gap-2">
         <SectionTitle isAlignedLeft>{title}</SectionTitle>
         {children}
         {buttonTitle && buttonLink && (
           <Button className="mr-auto mt-6">
-            <Link href={buttonLink}>{buttonTitle}</Link>
+            <Link href="/">{buttonTitle}</Link>
           </Button>
         )}
       </div>

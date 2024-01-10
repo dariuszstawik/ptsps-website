@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="container mx-auto px-10">
             <div className="flex flex-wrap mb-6 lg:mb-10">
               <div className="mb-auto w-full lg:w-1/5">
-                <Logo className="mt-4 w-64" />
+                <Logo className="mt-4 w-64" hasWhiteBackground />
               </div>
               <div className="mb-5 w-full lg:w-1/5">
                 <h4 className="mb-2">

@@ -28,7 +28,7 @@ export default function CounterSection() {
         </div>
         <div className="w-96 flex flex-col justify-center items-center gap-6 bg-gray-100 rounded-lg px-6 py-10">
           <span className="flex text-primaryBlue font-bold">
-            <Counter end={8} />
+            <Counter end={8.5} decimals={1} />
             <h1>%</h1>
           </span>
           <span className="text-center text-xl">
