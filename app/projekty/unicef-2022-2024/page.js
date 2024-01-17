@@ -1,4 +1,5 @@
 import PageHeader from "@/components/global-components/page-header";
+import SectionSubtitle from "@/components/global-components/section-subtitle";
 import SectionTitle from "@/components/global-components/section-title";
 import SideMenu from "@/components/global-components/side-menu";
 import SingleArticle from "@/components/global-components/single-article";
@@ -7,24 +8,27 @@ import { Check } from "lucide-react";
 export default function Unicef20222024() {
   return (
     <div>
-      <PageHeader>Unicef 2022-2024</PageHeader>
+      <PageHeader>Projekty</PageHeader>
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="col-span-2">
           <SingleArticle
-            title="Unicef 2022-2024 - wstęp"
-            isTitleAlignedLeft
+            title="Unicef 2022-2024: wstęp"
+            // isTitleAlignedLeft
             // img="/unicef-logo.png"
             hasSlider
             className="py-0"
           >
-            <p>
-              Projekt Wsparcie rozwoju pracowników polskiego systemu pomocy
-              społecznej jest wspólną inicjatywą PTSPS i UNICEF. W obliczu
-              kryzysu migracyjnego związanego z inwazją rosyjską na Ukrainę
-              podjęliśmy działania mające na celu merytoryczne wsparcie
-              pracowników polskiej pomocy społecznej – wzmocnienie i zwiększenie
-              specjalistycznych kompetencji uznaliśmy za kluczowe w efektywnym
-              pomaganiu rodzinom uciekającym przed wojną z terytorium Ukrainy.
+            <p className="text-lg">
+              <b>
+                Projekt Wsparcie rozwoju pracowników polskiego systemu pomocy
+                społecznej jest wspólną inicjatywą PTSPS i UNICEF. W obliczu
+                kryzysu migracyjnego związanego z inwazją rosyjską na Ukrainę
+                podjęliśmy działania mające na celu merytoryczne wsparcie
+                pracowników polskiej pomocy społecznej – wzmocnienie i
+                zwiększenie specjalistycznych kompetencji uznaliśmy za kluczowe
+                w efektywnym pomaganiu rodzinom uciekającym przed wojną z
+                terytorium Ukrainy.
+              </b>
             </p>
             <p>
               Główne działania w projekcie to opracowanie i przeprowadzenie
@@ -41,64 +45,69 @@ export default function Unicef20222024() {
               spotkań).
             </p>
             <ul>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" /> czas: 1.10.2022 – 14.03.
-                2024{" "}
+              <li className="flex gap-2 mb-2 mt-4">
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>czas:</strong> 1.10.2022 – 14.03. 2024{" "}
               </li>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" /> budżet: 5 504 400 PLN{" "}
+              <li className="flex gap-2 mb-2">
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>budżet:</strong> 5 504 400 PLN{" "}
               </li>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" /> finansowanie: UNICEF
-                (Biuro UNICEF ds. Reagowania na Potrzeby Uchodźców w Polsce){" "}
+              <li className="flex gap-2 mb-2">
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>finansowanie:</strong> UNICEF (Biuro UNICEF ds.
+                Reagowania na Potrzeby Uchodźców w Polsce){" "}
               </li>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" />
-                status: w trakcie realizacji
+              <li className="flex gap-2 mb-2">
+                <Check className="text-primaryBlue w-4 mt-auto" />
+                <strong>status:</strong> w trakcie realizacji
               </li>
             </ul>
-            <SectionTitle isAlignedLeft>Ludzie projektu</SectionTitle>
+            {/* <SectionTitle isAlignedLeft>Ludzie projektu</SectionTitle> */}
+            <div className="mb-6">
+              <SectionSubtitle isAlignedLeft>Ludzie projektu</SectionSubtitle>
+            </div>
             <ul>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" />
+              <li className="flex gap-2 mb-2">
+                <Check className="text-primaryBlue w-4 mt-auto" />
                 <strong>autorzy projektu: </strong>Marcin Mikulski, Marek Jaros
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />{" "}
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
                 <strong>nadzór merytoryczny</strong>
                 (Chief Strategy Officer): Marek Jaros
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />{" "}
-                <strong>nadzór formalny (Project Managing Officer)</strong>:
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>nadzór formalny </strong>(Project Managing Officer):
                 Marcin Mikulski
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />{" "}
-                <strong>nadzór finansowy (Chief Financial Officer)</strong>:
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>nadzór finansowy </strong>(Chief Financial Officer):
                 Katarzyna Biernat-Pilarska
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />{" "}
-                <strong>koordynacja (Project Manager)</strong>: Agata Walerowicz
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>koordynacja </strong>(Project Manager): Agata Walerowicz
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />
+                <Check className="text-primaryBlue w-4 mt-auto" />
                 <strong>koordynacja superwizji</strong>: Agnieszka Ignasiak
               </li>
-              <li className="flex gap-2">
-                <Check className="text-primaryBlue" />{" "}
+              <li className="flex gap-2 mb-2">
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
                 <strong> koordynacja szkoleń</strong>: Aleksandra Sokolik
               </li>
-              <li className="flex gap-2">
+              <li className="flex gap-2 mb-2">
                 {" "}
-                <Check className="text-primaryBlue" />{" "}
-                <strong>zarządzanie zgodnością (Compliance Manager)</strong>:
+                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                <strong>zarządzanie zgodnością </strong>(Compliance Manager):
                 Katarzyna Lis
               </li>
             </ul>
@@ -106,7 +115,7 @@ export default function Unicef20222024() {
         </div>
         <SideMenu
           // isBlue
-          className=""
+          className="mt-36"
           itemsList={[
             {
               title: "Unicef 2022-2024 - wstęp",
@@ -120,18 +129,18 @@ export default function Unicef20222024() {
               title: "Założenia projektu",
               path: "/projekty/unicef-2022-2024/zalozenia-projektu",
             },
-            // {
-            //   title: "Realizacja: superwizje",
-            //   path: "/projekty/unicef-2022-2024/realizacja-superwizje",
-            // },
-            // {
-            //   title: "Realizacja: programy",
-            //   path: "/projekty/unicef-2022-2024/realizacja-programy",
-            // },
-            // {
-            //   title: "Realizacja: szkolenia",
-            //   path: "/projekty/unicef-2022-2024/realizacja-szkolenia",
-            // },
+            {
+              title: "Realizacja: superwizje",
+              path: "/projekty/unicef-2022-2024/realizacja-superwizje",
+            },
+            {
+              title: "Realizacja: programy",
+              path: "/projekty/unicef-2022-2024/realizacja-programy",
+            },
+            {
+              title: "Realizacja: szkolenia",
+              path: "/projekty/unicef-2022-2024/realizacja-szkolenia",
+            },
           ]}
         />
       </section>

@@ -23,7 +23,7 @@ export default function Home() {
         naszej bazie znajduje się obecnie 54 certyfikowanych superwizorów pracy
         socjalnej oraz 35 metodyków i szkoleniowców w obszarze pracy socjalnej.
       </ParagraphWithImageOnTheLeft>
-      <TeamSection />
+      {/* <TeamSection /> */}
       {/* <TestimonialsCarousel /> */}
     </div>
   );

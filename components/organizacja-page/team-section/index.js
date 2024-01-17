@@ -1,8 +1,17 @@
+import SectionSubtitle from "@/components/global-components/section-subtitle";
 import TeamMember from "../team-member";
+import BlueTitle from "@/components/global-components/blue-title";
+import ListItem from "@/components/global-components/list-item";
 
 export const TeamSection = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      {/* <BlueTitle className="ml-16 mb-10">Zarząd Stowarzyszenia</BlueTitle> */}
+      <img src="/wspolne.jpg" className="w-full mb-10" />
+      {/* <div className="bg-primaryBlue p-10"> */}
+      <div className=" mb-16">
+        <SectionSubtitle>Zarząd Stowarzyszenia</SectionSubtitle>
+      </div>
       <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:max-w-screen-lg">
         <TeamMember
           name="Maciej Sosnowski"
@@ -31,6 +40,25 @@ export const TeamSection = () => {
           współpracy z UNICEF (2022/2024). Jest redaktorem kwartalnika
           Superwizja Pracy Socjalnej.
         </TeamMember>
+      </div>
+      {/* </div> */}
+      <div className="flex flex-wrap justify-center items-center gap-16 mt-16">
+        <div className="w-2/5">
+          <SectionSubtitle>Komisja rewizyjna</SectionSubtitle>
+          <ul className="mt-8">
+            <ListItem>Gabriela Konarzewska - przewodnicząca</ListItem>
+            <ListItem>Anna Olech - członkini</ListItem>
+            <ListItem>Bożena Wołoszyn - członkini</ListItem>
+          </ul>
+        </div>
+        <div className="w-2/5">
+          <SectionSubtitle>Komisja etyczna</SectionSubtitle>
+          <ul className="mt-8">
+            <ListItem>Karolina Busk</ListItem>
+            <ListItem>Elżbieta Danielska-Konopacka</ListItem>
+            <ListItem>Mariola Krasnodębska</ListItem>
+          </ul>
+        </div>
       </div>
     </div>
   );

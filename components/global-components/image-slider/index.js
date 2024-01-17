@@ -35,10 +35,10 @@ export default function ImageSlider() {
   return (
     <div>
       <Slider {...settings}>
-        <img src="/unicef1.jpg" alt="unicef1" />
-        <img src="/unicef2.jpg" alt="unicef2" />
+        {/* <img src="/unicef1.jpg" alt="unicef1" />
+        <img src="/unicef2.jpg" alt="unicef2" /> */}
         <img src="/unicef3.jpg" alt="unicef3" />
-        <img src="/unicef4.jpg" alt="unicef4" />
+        {/* <img src="/unicef4.jpg" alt="unicef4" /> */}
         <img src="/unicef5.jpg" alt="unicef5" />
         <img src="/unicef6.jpg" alt="unicef6" />
         <img src="/unicef7.jpg" alt="unicef7" />

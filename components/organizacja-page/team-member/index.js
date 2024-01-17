@@ -2,7 +2,7 @@ export default function TeamMember({ name, role, children, img }) {
   return (
     <div>
       <img
-        className="object-cover w-24 h-24 rounded-full shadow"
+        className="object-cover w-40 h-40 rounded-full shadow"
         src={img}
         alt="Person"
       />

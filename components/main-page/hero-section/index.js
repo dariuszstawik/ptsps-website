@@ -19,7 +19,7 @@ export default function HeroSection() {
         <Button>Poznaj nas</Button>
         {/* <div className="relative w-full h-20"> */}
         <div className="absolute bottom-16 right-16">
-          {/* <NewsCard /> */}
+          <NewsCard />
           {/* </div> */}
         </div>
       </div>

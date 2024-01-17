@@ -1,12 +1,14 @@
 import Link from "next/link";
 import SectionTitle from "../section-title";
+import SectionSubtitle from "../section-subtitle";
 
 export default function SideMenu({ itemsList, isBlue, className }) {
   return (
     <div className={`flex flex-col gap-6 ${className}`}>
-      {/* <img src="/unicef-logo.png" alt="unicef-logo" className="" /> */}
-      <div>
-        <h3 className="pl-2 text-slate-800 pb-0 mb-0">Więcej o projekcie</h3>
+      <img src="/unicef-logo.png" alt="unicef-logo" className="" />
+      <div className="-mb-2">
+        {/* <h3 className="pl-2 text-slate-800 pb-0 mb-0">Więcej o projekcie</h3> */}
+        <SectionSubtitle isAlignedLeft>Więcej o projekcie</SectionSubtitle>
         {/* <SectionTitle isAlignedLeft>Więcej o projekcie</SectionTitle> */}
       </div>
       <ul

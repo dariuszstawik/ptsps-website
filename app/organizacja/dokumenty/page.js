@@ -22,7 +22,7 @@ export default async function DokumentyPage() {
   return (
     <>
       <PageHeader> Dokumenty </PageHeader>
-      <ParagraphWithImageOnTheLeft title="Dokumenty">
+      <ParagraphWithImageOnTheLeft title="Dokumenty" img="/documents.png">
         <ul className="my-4">
           {documents &&
             documents.map((item, i) => {
