@@ -21,7 +21,7 @@ export default function ParagraphWithImageOnTheLeft({
         triggerOnce
         className="flex justify-center items-start w-1/2"
       >
-        <div>
+        {/* <div>
           {contentfulImg && (
             <img
               src={
@@ -42,11 +42,28 @@ export default function ParagraphWithImageOnTheLeft({
             <img
               src={img}
               alt={alt ? alt : ""}
-              // style={{ width: "600px", height: "440px", objectFit: "cover" }}
+
               className="rounded"
             />
           )}
-          {/* <img src="/documents31.jpg" className="rounded" /> */}
+
+        </div> */}
+        <div className="grid grid-cols-2 gap-10">
+          <img
+            className="object-cover w-full col-span-2 rounded shadow-lg"
+            src="/onas3.jpg"
+            alt=""
+          />
+          <img
+            className="object-cover w-full rounded shadow-lg"
+            src="/onas4.jpg"
+            alt=""
+          />
+          <img
+            className="object-cover w-full rounded shadow-lg"
+            src="/onas5.jpg"
+            alt=""
+          />
         </div>
       </Slide>
       <div className="w-1/2 mx-8 lg:ml-20 lg:mr-32 flex flex-col gap-0">

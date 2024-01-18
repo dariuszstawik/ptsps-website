@@ -7,11 +7,16 @@ export default function Kontakt() {
   return (
     <div>
       <PageHeader>Kontakt</PageHeader>
-      <ParagraphWithImageOnTheLeft title="Kontakt" img="kontakt.jpg">
+      <ParagraphWithImageOnTheLeft
+        hasSubtitle
+        title="Kontakt"
+        img="kontakt.jpg"
+      >
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-6">
             <div>
-              Jesteśmy organizacją pozarządową działającą od 2015 roku na rzecz
+              <b>Polskie Towarzystwo Superwizji Pracy Socjalnej</b> jest
+              organizacją pozarządową działającą od 2015 roku na rzecz
               profesjonalizacji pomocy społecznej.
             </div>
             {/* <strong>Biuro</strong> */}

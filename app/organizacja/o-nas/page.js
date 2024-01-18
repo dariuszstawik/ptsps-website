@@ -28,7 +28,7 @@ export default function oNas() {
         title="O nas"
         buttonTitle="Nasze projekty"
         buttonLink="/projekty"
-        img="/onas2.jpg"
+        img="/onas3.jpg"
       >
         <p className="text-lg font-bold">
           Jesteśmy organizacją pozarządową działającą od 2015 roku na rzecz

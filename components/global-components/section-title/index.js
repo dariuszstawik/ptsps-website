@@ -1,7 +1,7 @@
 export default function SectionTitle({ children, isWhite, isAlignedLeft }) {
   return (
     <div
-      className={`mt-6 mb-6 flex flex-col ${
+      className={` mb-6 flex flex-col ${
         !isAlignedLeft && "justify-center items-center"
       } gap-2`}
     >
