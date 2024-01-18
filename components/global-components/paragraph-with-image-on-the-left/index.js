@@ -12,6 +12,7 @@ export default function ParagraphWithImageOnTheLeft({
   contentfulImg,
   buttonTitle,
   buttonLink,
+  isOnAboutPage,
 }) {
   return (
     <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
@@ -21,7 +22,7 @@ export default function ParagraphWithImageOnTheLeft({
         triggerOnce
         className="flex justify-center items-start w-1/2"
       >
-        {/* <div>
+        <div>
           {contentfulImg && (
             <img
               src={
@@ -38,32 +39,27 @@ export default function ParagraphWithImageOnTheLeft({
               className="rounded"
             />
           )}
-          {img && (
-            <img
-              src={img}
-              alt={alt ? alt : ""}
+          {img && <img src={img} alt={alt ? alt : ""} className="rounded" />}
 
-              className="rounded"
-            />
+          {isOnAboutPage && (
+            <div className="grid grid-cols-2 gap-10">
+              <img
+                className="object-cover w-full col-span-2 rounded shadow-lg"
+                src="/onas3.jpg"
+                alt=""
+              />
+              <img
+                className="object-cover w-full rounded shadow-lg"
+                src="/onas4.jpg"
+                alt=""
+              />
+              <img
+                className="object-cover w-full rounded shadow-lg"
+                src="/onas5.jpg"
+                alt=""
+              />
+            </div>
           )}
-
-        </div> */}
-        <div className="grid grid-cols-2 gap-10">
-          <img
-            className="object-cover w-full col-span-2 rounded shadow-lg"
-            src="/onas3.jpg"
-            alt=""
-          />
-          <img
-            className="object-cover w-full rounded shadow-lg"
-            src="/onas4.jpg"
-            alt=""
-          />
-          <img
-            className="object-cover w-full rounded shadow-lg"
-            src="/onas5.jpg"
-            alt=""
-          />
         </div>
       </Slide>
       <div className="w-1/2 mx-8 lg:ml-20 lg:mr-32 flex flex-col gap-0">
