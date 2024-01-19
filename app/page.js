@@ -24,6 +24,8 @@ export default function Home() {
           title="Czym jest superwizja pracy socjalnej?"
           img="onas4.jpg"
           hasBlueBackground
+          buttonTitle={"Więcej o superwizji"}
+          buttonLink={"/biblioteka"}
         >
           {/* Superwizja pracy socjalnej to szczególny, wieloaspektowy ogląd pracy
         służący rozwiązaniu trudności merytorycznych i emocjonalnych związanych
@@ -40,6 +42,7 @@ export default function Home() {
           zaplanowanego przedsięwzięcia jest zgoda uczestników superwizji na
           ujawnienie swoich doświadczeń w pracy z ludźmi i na ich analizę (Wódz,
           Leśniak-Berek, 2007)
+          <span className="block h-4" />
         </ParagraphWithImageOnTheLeft>
       </div>
       {/* <Testimonials /> */}
@@ -63,14 +66,12 @@ export default function Home() {
         >
           Projekt realizowany we współpracy z Biurem Reagowania na Potrzeby
           Uchodźców UNICEF. Jest odpowiedzią na kryzys uchodźczy związany z
-          wybuchem pełnoskalowej wojny w Ukrainie.
-          {/* Skala migracji z Ukrainy do
+          wybuchem pełnoskalowej wojny w Ukrainie. Skala migracji z Ukrainy do
           Polski spowodowała znaczne obciążenie naszego systemu pomocy
           społecznej i postawiła przed pracownikami pomocy społecznej nowe
-          zadania i nowe wymagania.  */}
-          Celem projektu jest wsparcie pracowników (superwizyjne i edukacyjne),
-          tak by mogli efektywnie pomagać osobom z Ukrainy, które schroniły się
-          w naszym kraju.
+          zadania i nowe wymagania. Celem projektu jest wsparcie pracowników
+          (superwizyjne i edukacyjne), tak by mogli efektywnie pomagać osobom z
+          Ukrainy, które schroniły się w naszym kraju.
           {/* Podstawowe działania to uruchomienie i
         prowadzenie przez dziesięć miesięcy stu osiemdziesięciu grup
         superwizyjnych dla pracowników pomocy społecznej oraz opracowanie

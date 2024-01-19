@@ -74,9 +74,12 @@ const Navbar = () => {
                       <NavigationMenuItem key={nav.id}>
                         {nav.submenu ? (
                           <>
-                            <NavigationMenuTrigger className="text-base">
-                              {nav.title}
-                            </NavigationMenuTrigger>
+                            <Link href={nav.path}>
+                              {" "}
+                              <NavigationMenuTrigger className="text-base">
+                                {nav.title}
+                              </NavigationMenuTrigger>
+                            </Link>
                             <NavigationMenuContent>
                               <ul className="grid gap-3 p-6 md:w-[400px] lg:min-w-[900px] lg:grid-cols-[.75fr_1fr]">
                                 {nav.submenu.map(
@@ -124,8 +127,32 @@ const Navbar = () => {
         <div className="flex ml-10 gap-2">
           {/* <Facebook className="text-white bg-primaryBlue rounded w-10 h-10 p-2" />
           <Linkedin className="text-white bg-primaryBlue rounded w-10 h-10 p-2" /> */}
-          <img src="/facebook.svg" alt="facebook" className="w-12 h-12 p-2" />
-          <img src="/linkedin.svg" alt="linkedin" className="w-12 h-12 p-2" />
+          <div className="w-12 h-12 p-2 shrink-0">
+            <a
+              href="https://www.facebook.com/superwizja.pracy.socjalnej"
+              target="_blank"
+            >
+              <img
+                src="/facebook.svg"
+                alt="facebook"
+                className="w-full h-full"
+              />
+            </a>
+          </div>
+
+          <div className="w-12 h-12 p-2 shrink-0">
+            <a
+              href="https://www.linkedin.com/company/polskie-towarzystwo-superwizji-pracy-socjalnej/"
+              target="_blank"
+            >
+              <img
+                img
+                src="/linkedin.svg"
+                alt="linkedin"
+                className="w-full h-full"
+              />
+            </a>
+          </div>
         </div>
         <Hamburger
           hasCloseIcon={isMobileMenuActive ? true : false}

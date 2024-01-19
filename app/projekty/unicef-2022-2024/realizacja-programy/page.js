@@ -20,7 +20,7 @@ export default function RealizacjaProgramy() {
           >
             {/* <TeamSection /> */}
             {/* <Timeline /> */}
-            <p className="text-lg">
+            <p className="">
               <b>
                 Opracowaliśmy 20 programów szkoleniowych na wybrane tematy,
                 odpowiadające potrzebom pracowników pomocy społecznej i

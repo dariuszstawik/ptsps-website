@@ -52,7 +52,7 @@ export default function ParagraphWithImageOnTheRight({
           {/* <img src="/documents31.jpg" className="rounded" /> */}
         </div>
       </Slide>
-      <div className="w-2/3 mx-10 lg:ml-24 lg:mr-32 flex flex-col gap-2">
+      <div className="w-3/5 mx-10 lg:mr-16 flex flex-col gap-2">
         <SectionTitle isAlignedLeft>{title}</SectionTitle>
         {children}
         {buttonTitle && buttonLink && (

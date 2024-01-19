@@ -9,7 +9,7 @@ export default function RealizacjaSuperwizje() {
   return (
     <div>
       <PageHeader>Projekty</PageHeader>
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-28">
         <div className="col-span-2">
           <SingleArticle
             title="Unicef 2022-2024: superwizje"
@@ -19,7 +19,7 @@ export default function RealizacjaSuperwizje() {
           >
             {/* <TeamSection /> */}
             {/* <Timeline /> */}
-            <p className="text-lg">
+            <p className="">
               <b>
                 Uruchomiliśmy 180 grup superwizyjnych, które spotykały się przez
                 10 miesięcy (raz w miesiącu po 5 godzin).

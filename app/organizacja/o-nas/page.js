@@ -32,7 +32,7 @@ export default function oNas() {
           // img="/onas3.jpg"
           isOnAboutPage
         >
-          <p className="text-lg font-bold">
+          <p className=" font-bold">
             Jesteśmy organizacją pozarządową działającą od 2015 roku na rzecz
             profesjonalizacji pomocy społecznej. Za podstawowe narzędzie
             uznaliśmy superwizję – stąd nasze działanie koncentruja się na

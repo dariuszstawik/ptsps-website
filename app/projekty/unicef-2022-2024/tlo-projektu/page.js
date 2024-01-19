@@ -19,7 +19,7 @@ export default function TloProjektu() {
           >
             {/* <TeamSection /> */}
             {/* <Timeline /> */}
-            <p className="text-lg">
+            <p className="">
               <b>
                 24 lutego 2022 roku Rosja rozpoczęła pełnowymiarową inwazję na
                 Ukrainę. Cztery miesiące później według danych ONZ liczba

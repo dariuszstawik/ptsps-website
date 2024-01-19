@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import Button from "../../global-components/button";
 import NewsCard from "../news-card";
+import { Fade, Slide } from "react-awesome-reveal";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -18,7 +21,9 @@ export default function HeroSection() {
           </h2>
           <p className="text-white z-40"> - Virginia Satir</p>
         </div>
-        <Button>Poznaj nas</Button>
+        <Link href="/organizacja/o-nas">
+          <Button>Poznaj nas</Button>
+        </Link>
 
         <div className="absolute bottom-16 right-16">
           <NewsCard />

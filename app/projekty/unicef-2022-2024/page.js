@@ -18,7 +18,7 @@ export default function Unicef20222024() {
             hasSlider
             className="py-0"
           >
-            <p className="text-lg">
+            <p className="">
               <b>
                 Projekt Wsparcie rozwoju pracowników polskiego systemu pomocy
                 społecznej jest wspólną inicjatywą PTSPS i UNICEF. W obliczu

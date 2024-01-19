@@ -15,7 +15,7 @@ export default function ZalozeniaProjektu() {
             className="py-0"
             // hasSlider
           >
-            <p className="text-lg">
+            <p className="">
               <b>
                 Szukając odpowiedzi na powyższe problemy opracowaliśmy
                 kompleksowy projekt wsparcia pracowników pomocy społecznej

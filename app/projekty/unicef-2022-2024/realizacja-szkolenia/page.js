@@ -10,7 +10,7 @@ export default function RealizacjaSzkolenia() {
   return (
     <div>
       <PageHeader>Projekty</PageHeader>
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-28">
         <div className="col-span-2">
           <SingleArticle
             title="Unicef 2022-2024: szkolenia"
@@ -20,7 +20,7 @@ export default function RealizacjaSzkolenia() {
           >
             {/* <TeamSection /> */}
             {/* <Timeline /> */}
-            <p className="text-lg">
+            <p className="">
               <b>
                 Jesteśmy w trakcie realizacji tego komponentu – podsumowanie
                 przedstawimy w kwietniu 2024.

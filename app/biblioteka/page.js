@@ -33,8 +33,10 @@ export default async function BibliotekaPage() {
   return (
     <div>
       <PageHeader>Biblioteka</PageHeader>
-      <section className="container mx-auto pb-28">
-        <SectionTitle>Nasze publikacje</SectionTitle>
+      <section className="container mx-auto pb-32 pt-6">
+        <div className="my-16">
+          <SectionTitle>Nasze publikacje</SectionTitle>
+        </div>
         <ul className="grid grid-cols-1 gap-16 xl:grid-cols-3 mx-auto px-10">
           {libraryList(9)}
         </ul>
