@@ -8,14 +8,14 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="xl:h-screen relative flex flex-col justify-center items-center bg-[url('/wspolne.jpg')] bg-cover before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-darkBlue before:opacity-85">
-      <div className="w-[60%] h-full flex flex-col justify-center items-center gap-6">
-        <h1 className="text-4xl font-bold text-white z-40 text-center leading-relaxed uppercase">
+      <div className="w-[85%] lg:w-[60%] h-full flex flex-col justify-center items-center gap-6">
+        <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white z-40 text-center leading-relaxed uppercase">
           Wyznaczamy nowe kierunki superwizji pracy socjalnej
           {/* Naszą misją jest propagowanie idei superwizji pracy socjalnej i
           profesjonalizacja pomocy społecznej */}
         </h1>
         <div className="flex flex-col justify-center items-center gap-4">
-          <h2 className="text-xl text-white text-center leading-relaxed z-40">
+          <h2 className="text-lg lg:text-xl text-white text-center leading-relaxed z-40">
             "Patrz na wszystkie trudności jako na możliwości stworzenia czegoś
             nowego, uczenia się i wzrastania dzięki kreatywnemu reagowaniu"
           </h2>
