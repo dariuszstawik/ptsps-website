@@ -6,9 +6,7 @@ import ListItem from "@/components/global-components/list-item";
 export const TeamSection = () => {
   return (
     <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 pb-20">
-      {/* <BlueTitle className="ml-16 mb-10">Zarząd Stowarzyszenia</BlueTitle> */}
       <img src="/wspolne.jpg" className="w-full mb-20" />
-      {/* <div className="bg-primaryBlue p-10"> */}
       <div className=" mb-16 mt-10">
         <SectionSubtitle>Zarząd Stowarzyszenia</SectionSubtitle>
       </div>
@@ -46,8 +44,8 @@ export const TeamSection = () => {
         </TeamMember>
       </div>
       {/* </div> */}
-      <div className="flex flex-wrap justify-center items-center gap-16 mt-16">
-        <div className="w-2/5">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-16 mt-16">
+        <div className="w-4/5 xl:w-2/5">
           <SectionSubtitle>Komisja rewizyjna</SectionSubtitle>
           <ul className="mt-8">
             <ListItem>Gabriela Konarzewska - przewodnicząca</ListItem>
@@ -55,7 +53,7 @@ export const TeamSection = () => {
             <ListItem>Bożena Wołoszyn - członkini</ListItem>
           </ul>
         </div>
-        <div className="w-2/5">
+        <div className="w-4/5 xl:w-2/5">
           <SectionSubtitle>Komisja etyczna</SectionSubtitle>
           <ul className="mt-8">
             <ListItem>Karolina Busk</ListItem>

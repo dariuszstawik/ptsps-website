@@ -19,12 +19,6 @@ export default async function HistoriaPage() {
       <PageHeader>Organizacja</PageHeader>
       <div className="mt-20">
         <SectionTitle>Historia PTSPS</SectionTitle>
-        {/* <SingleArticle
-        title={content.fields.title}
-        lead={content.fields.lead}
-        // content={documentToReactComponents(content.fields.content)}
-        img={content.fields.obraz ? content.fields.image : ""}
-      ></SingleArticle> */}
         <Timeline />
       </div>
     </div>

@@ -223,7 +223,7 @@ export default function Timeline() {
       </ul> */}
 
       <div>
-        <ul className="timeline timeline-vertical timeline-compact flex items-start mx-64">
+        <ul className="timeline timeline-vertical timeline-compact flex items-start mx-10 lg:mx-64">
           <li>
             <div className="timeline-start text-primaryBlue font-semibold">
               2010
