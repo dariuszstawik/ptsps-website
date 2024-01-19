@@ -52,7 +52,7 @@ export default function Home() {
       {/* <Testimonials /> */}
 
       <section className="p-16 py-20">
-        <SectionTitle>Mówią o superwizji</SectionTitle>
+        <SectionTitle>Okiem ekspertów i praktyków</SectionTitle>
         <TestimonialsCarousel />
       </section>
       {/* <TeamSection /> */}

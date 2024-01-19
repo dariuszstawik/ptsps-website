@@ -94,13 +94,12 @@ export default function Footer() {
       </section>
       <div className="w-screen flex-col justify-center items-center bg-gray-200 mt-0 py-8">
         <p className="text-sm mx-auto text-center mb-2">
-          © 2024. Polskie Towarzystwo Superwizji Pracy Socjalnej. All rights
-          reserved.
+          © 2024. PTSPS. All rights reserved.
         </p>
 
-        <p className="text-sm mx-auto text-center mb-2">
+        {/* <p className="text-sm mx-auto text-center mb-2">
           <Link href="/">polityka prywatności</Link>
-        </p>
+        </p> */}
 
         <p className="text-sm mx-auto text-center">
           Created by{" "}
