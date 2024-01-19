@@ -162,7 +162,7 @@ const Navbar = () => {
 
       <div className="bg-white border-b-2 border-b-gray-100 text-xl antialiased fixed w-screen h-28 flex justify-between items-center px-10 lg:px-16 py-4  top-0 left-0 z-50 lg:hidden">
         <div className="navbar bg-base-100">
-          <div className="navbar-start">
+          <div className="navbar-start flex">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -198,7 +198,7 @@ const Navbar = () => {
                           handleMouseEnter(index);
                         }}
                       >
-                        <a href={item.path}>{item.title}</a>
+                        <Link href={item.path}>{item.title}</Link>
                         {item.submenu &&
                           isSubmenuVisible &&
                           currentIndex === index && (
@@ -207,7 +207,9 @@ const Navbar = () => {
                                 (subitem, subindex) =>
                                   subitem.isVisible && (
                                     <li key={subindex}>
-                                      <a href={subitem.path}>{subitem.title}</a>
+                                      <Link href={subitem.path}>
+                                        {subitem.title}
+                                      </Link>
                                     </li>
                                   )
                               )}
@@ -218,7 +220,9 @@ const Navbar = () => {
                 )}
               </ul>
             </div>
-            <Logo />
+            <div className="mx-6 w-64 shrink-0">
+              <Logo />
+            </div>
           </div>
           {/* <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
