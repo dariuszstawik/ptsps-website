@@ -16,7 +16,7 @@ export const TeamSection = () => {
         <TeamMember
           name="Maciej Sosnowski"
           role="Prezes zarządu"
-          img="/msosnowski.jpg"
+          img="/msosnowski2.jpg"
         >
           Zasiada w zarządzie od 2021 roku, wcześniej pełnił funkcję członka
           Komisji Rewizyjnej PTSPS. Jest pracownikiem socjalnym, pedagogiem,
@@ -28,12 +28,16 @@ export const TeamSection = () => {
         <TeamMember
           name="Marek Lasota"
           role="Członek zarządu"
-          img="/mlasota.jpg"
+          img="/mlasota2.jpg"
         >
           Zasiada w zarządzie od 2020 roku. Jest pracownikiem socjalnym,
           psychoterapeutą psychodynamicznym i superwizorem pracy socjalnej.
         </TeamMember>
-        <TeamMember name="Marek Jaros" role="Członek zarządu" img="/mjaros.jpg">
+        <TeamMember
+          name="Marek Jaros"
+          role="Członek zarządu"
+          img="/mjaros2.jpg"
+        >
           Założyciel PTSPS, członek pierwszego zarządu. Członek zarządu od 2020
           roku. Jest psychologiem, psychoterapeutą i superwizorem pracy
           socjalnej. Zarządzał pierwszym projektem Towarzystwa realizowanym we
