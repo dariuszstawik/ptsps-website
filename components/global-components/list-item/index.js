@@ -1,28 +1,30 @@
+import { FileText } from "lucide-react";
 import React from "react";
 
 const ListItem = ({ children, isDocument, className }) => {
   return (
-    <div className={`flex items-center p-4 border-b ${className}`}>
+    <div className={`flex items-center py-4 px-2 border-b ${className}`}>
       {isDocument ? (
-        <svg
-          className="mr-4 mt-1 text-primaryBlue shrink-0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-file-text"
-        >
-          <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-          <polyline points="14 2 14 8 20 8" />
-          <line x1="16" x2="8" y1="13" y2="13" />
-          <line x1="16" x2="8" y1="17" y2="17" />
-          <line x1="10" x2="8" y1="9" y2="9" />
-        </svg>
+        // <svg
+        //   className="mr-4 mt-1 text-primaryBlue shrink-0"
+        //   xmlns="http://www.w3.org/2000/svg"
+        //   width="24"
+        //   height="24"
+        //   viewBox="0 0 24 24"
+        //   fill="none"
+        //   stroke="currentColor"
+        //   stroke-width="2"
+        //   stroke-linecap="round"
+        //   stroke-linejoin="round"
+        //   class="lucide lucide-file-text"
+        // >
+        //   <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+        //   <polyline points="14 2 14 8 20 8" />
+        //   <line x1="16" x2="8" y1="13" y2="13" />
+        //   <line x1="16" x2="8" y1="17" y2="17" />
+        //   <line x1="10" x2="8" y1="9" y2="9" />
+        // </svg>
+        <FileText className="mr-4 mt-1 text-primaryBlue shrink-0" />
       ) : (
         <svg
           className="mr-4 mt-1"

@@ -72,14 +72,14 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground text-slate-800;
+    @apply bg-background text-foreground w-full overflow-x-hidden text-slate-800;
   }
   h1 {
     @apply text-4xl lg:text-5xl
   }
   
   h2 {
-    @apply text-3xl lg:text-4xl
+    @apply text-2xl lg:text-3xl
   }
   
   h3 {
@@ -95,7 +95,7 @@
   }
   
   p {
-    @apply antialiased my-4;
+    @apply antialiased my-3;
   }
 
   /* article strong {

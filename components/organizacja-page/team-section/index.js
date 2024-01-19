@@ -5,11 +5,11 @@ import ListItem from "@/components/global-components/list-item";
 
 export const TeamSection = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 pb-20">
       {/* <BlueTitle className="ml-16 mb-10">Zarząd Stowarzyszenia</BlueTitle> */}
-      <img src="/wspolne.jpg" className="w-full mb-10" />
+      <img src="/wspolne.jpg" className="w-full mb-20" />
       {/* <div className="bg-primaryBlue p-10"> */}
-      <div className=" mb-16">
+      <div className=" mb-16 mt-10">
         <SectionSubtitle>Zarząd Stowarzyszenia</SectionSubtitle>
       </div>
       <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-3 lg:max-w-screen-lg">

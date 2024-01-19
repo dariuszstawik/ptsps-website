@@ -13,9 +13,15 @@ export default function ParagraphWithImageOnTheLeft({
   buttonTitle,
   buttonLink,
   isOnAboutPage,
+  hasBlueBackground,
+  hasSectionSubtitle,
 }) {
   return (
-    <div className={`w-full px-10 lg:px-20 py-16 flex flex-col lg:flex-row`}>
+    <div
+      className={`w-full px-10 lg:px-20 py-20 flex flex-col lg:flex-row ${
+        hasBlueBackground && "bg-darkBlue text-white"
+      }`}
+    >
       <Slide
         direction="left"
         delay={200}
@@ -62,8 +68,14 @@ export default function ParagraphWithImageOnTheLeft({
           )}
         </div>
       </Slide>
-      <div className="w-1/2 mx-8 lg:ml-20 lg:mr-32 flex flex-col gap-0">
-        <SectionTitle isAlignedLeft>{title}</SectionTitle>
+      <div className="w-1/2 mx-8 lg:ml-16 lg:mr-16 flex flex-col gap-0">
+        <SectionTitle
+          isAlignedLeft
+          isWhite={hasBlueBackground}
+          isNotUppercase={hasSectionSubtitle}
+        >
+          {title}
+        </SectionTitle>
         {children}
         {buttonTitle && buttonLink && (
           <Button className="mr-auto mt-6">

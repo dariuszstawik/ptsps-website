@@ -1,6 +1,6 @@
 export default function Timeline() {
   return (
-    <div>
+    <div className="mb-28">
       {/* <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">
@@ -225,12 +225,14 @@ export default function Timeline() {
       <div>
         <ul className="timeline timeline-vertical timeline-compact flex items-start mx-64">
           <li>
-            <div className="timeline-start">2010</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              2010
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -272,12 +274,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">2015</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              2015
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -311,12 +315,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">2020</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              2020
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -335,12 +341,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">2021</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              2021
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -359,12 +367,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Marzec 2022</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Marzec 2022
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -375,24 +385,24 @@ export default function Timeline() {
               </svg>
             </div>
             <div className="timeline-end timeline-box my-6">
-              Nawiązaliśmy{" "}
-              <strong>
-                współpracę z Biurem ds. Reagowania na Potrzeby Uchodźców UNICEF
-              </strong>
-              . Rozpoczęliśmy przygotowania do uruchomienia projektu, który miał
-              na celu wsparcie polskiego systemu pomocy społecznej w odpowiedzi
-              na kryzys związany z uchodźcami z Ukrainy.
+              Nawiązaliśmy {/* <strong> */}
+              współpracę z Biurem ds. Reagowania na Potrzeby Uchodźców UNICEF
+              {/* </strong> */}. Rozpoczęliśmy przygotowania do uruchomienia
+              projektu, który miał na celu wsparcie polskiego systemu pomocy
+              społecznej w odpowiedzi na kryzys związany z uchodźcami z Ukrainy.
             </div>
             <hr />
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Wrzesień 2022</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Wrzesień 2022
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -416,12 +426,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Październik 2022</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Październik 2022
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -442,12 +454,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Luty 2023</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Luty 2023
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -467,12 +481,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Luty 2023</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Luty 2023
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -492,12 +508,14 @@ export default function Timeline() {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">Czerwiec 2023</div>
+            <div className="timeline-start text-primaryBlue font-semibold">
+              Czerwiec 2023
+            </div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path
@@ -520,7 +538,7 @@ export default function Timeline() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
-                fill="currentColor"
+                fill="#1cabe2"
                 className="w-5 h-5"
               >
                 <path

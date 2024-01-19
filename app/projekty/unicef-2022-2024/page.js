@@ -9,7 +9,7 @@ export default function Unicef20222024() {
   return (
     <div>
       <PageHeader>Projekty</PageHeader>
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
         <div className="col-span-2">
           <SingleArticle
             title="Unicef 2022-2024: wstęp"
@@ -115,7 +115,7 @@ export default function Unicef20222024() {
         </div>
         <SideMenu
           // isBlue
-          className="mt-36"
+          className="mt-28"
           itemsList={[
             {
               title: "Unicef 2022-2024 - wstęp",

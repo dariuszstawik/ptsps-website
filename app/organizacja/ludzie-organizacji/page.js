@@ -4,9 +4,11 @@ import { TeamSection } from "@/components/organizacja-page/team-section";
 
 export default function LudzieOrganiacji() {
   return (
-    <div>
+    <div className="mb-20">
       <PageHeader>Organizacja</PageHeader>
-      <SectionTitle>Ludzie organizacji</SectionTitle>
+      <div className="mt-20">
+        <SectionTitle>Ludzie organizacji</SectionTitle>
+      </div>
       <TeamSection />
     </div>
   );

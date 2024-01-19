@@ -39,7 +39,7 @@ const navbarData = [
         id: 5,
         title: "Współpraca",
         path: "/organizacja/wspolpraca",
-        isVisible: true,
+        isVisible: false,
       },
       {
         id: 6,
@@ -51,7 +51,7 @@ const navbarData = [
         id: 7,
         title: "PSEA",
         path: "/organizacja/psea",
-        isVisible: true,
+        isVisible: false,
       },
     ],
   },
@@ -71,19 +71,19 @@ const navbarData = [
         id: 2,
         title: "Kodeks etyczny",
         path: "/projekty/kodeks-etyczny",
-        isVisible: true,
+        isVisible: false,
       },
       {
         id: 3,
         title: "Konferencja",
         path: "/projekty/konferencja",
-        isVisible: true,
+        isVisible: false,
       },
       {
         id: 4,
         title: "Kampania",
         path: "/projekty/kampania",
-        isVisible: true,
+        isVisible: false,
       },
       // {
       //   id: 5,
@@ -94,7 +94,7 @@ const navbarData = [
         id: 5,
         title: "Circle Study",
         path: "/projekty/circle-study",
-        isVisible: true,
+        isVisible: false,
       },
     ],
   },
@@ -102,7 +102,7 @@ const navbarData = [
     id: 4,
     title: "Superwizja",
     path: "/superwizja",
-    isVisible: true,
+    isVisible: false,
     submenu: [
       {
         id: 1,
@@ -153,7 +153,7 @@ const navbarData = [
     id: 6,
     title: "Oferta",
     path: "/oferta",
-    isVisible: true,
+    isVisible: false,
     submenu: [
       {
         id: 1,

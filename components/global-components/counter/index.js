@@ -6,7 +6,7 @@ export default function Counter({ end, decimals }) {
     <h1 className="">
       <CountUp
         end={end}
-        duration={3}
+        duration={5}
         separator=" "
         decimals={decimals}
         decimal=","

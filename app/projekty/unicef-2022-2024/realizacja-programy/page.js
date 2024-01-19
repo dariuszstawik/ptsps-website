@@ -288,7 +288,7 @@ export default function RealizacjaProgramy() {
         </div>
         <SideMenu
           // isBlue
-          className="mt-36"
+          className="mt-28"
           itemsList={[
             {
               title: "Unicef 2022-2024 - wstęp",

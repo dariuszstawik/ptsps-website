@@ -13,12 +13,11 @@ async function getContentfulContent() {
 
 export default async function HistoriaPage() {
   const content = await getContentfulContent();
-  console.log("------------------");
-  console.log(content);
+
   return (
     <div>
       <PageHeader>Historia</PageHeader>
-      <div>
+      <div className="mt-20">
         <SectionTitle>Historia PTSPS</SectionTitle>
         {/* <SingleArticle
         title={content.fields.title}
