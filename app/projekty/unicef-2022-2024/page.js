@@ -64,7 +64,7 @@ export default function Unicef20222024() {
               </li>
             </ul>
             {/* <SectionTitle isAlignedLeft>Ludzie projektu</SectionTitle> */}
-            <div className="mb-6">
+            <div className="mb-6 mt-2">
               <SectionSubtitle isAlignedLeft>Ludzie projektu</SectionSubtitle>
             </div>
             <ul>

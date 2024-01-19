@@ -98,7 +98,7 @@ export default function TestimonialCarousel() {
         </TestimonialCard>
         <TestimonialCard
           name="Dr hab. Jerzy Krzyszkowski"
-          title="Prof. UJD"
+          title="Prof. Uniwersytetu Jana Długosza w Częstochowie"
           img="/Jerzy-Krzyszkowski.jpg"
         >
           Superwizja jest ważnym narzędziem zarządzania zasobami ludzkimi w
@@ -109,7 +109,7 @@ export default function TestimonialCarousel() {
         </TestimonialCard>
         <TestimonialCard
           name="Ewa Błędowska"
-          title="kierowniczka Działu Pomocy Środowiskowej MOPS w Wodzisławiu Śl."
+          title="Kierowniczka Działu Pomocy Środowiskowej MOPS w Wodzisławiu Śląskim"
           img="/Ewa-Bledowska.jpg"
         >
           Superwizja to niewątpliwie zwiększanie samoświadomości w pracy

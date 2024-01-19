@@ -16,7 +16,7 @@ export default async function HistoriaPage() {
 
   return (
     <div>
-      <PageHeader>Historia</PageHeader>
+      <PageHeader>Organizacja</PageHeader>
       <div className="mt-20">
         <SectionTitle>Historia PTSPS</SectionTitle>
         {/* <SingleArticle
