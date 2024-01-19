@@ -18,7 +18,7 @@ export default function ParagraphWithImageOnTheLeft({
 }) {
   return (
     <div
-      className={`w-full px-10 lg:px-20 py-20 flex flex-col lg:flex-row ${
+      className={`w-full px-6 lg:px-20 py-20 flex flex-col lg:flex-row ${
         hasBlueBackground && "bg-darkBlue text-white"
       }`}
     >
@@ -26,7 +26,7 @@ export default function ParagraphWithImageOnTheLeft({
         direction="left"
         delay={200}
         triggerOnce
-        className="flex justify-center items-start w-1/2"
+        className="flex justify-center items-start w-full lg:w-1/2"
       >
         <div>
           {contentfulImg && (
@@ -68,7 +68,7 @@ export default function ParagraphWithImageOnTheLeft({
           )}
         </div>
       </Slide>
-      <div className="w-1/2 mx-8 lg:ml-16 lg:mr-16 flex flex-col gap-0">
+      <div className="w-full lg:w-1/2 mx-6 pr-6 pt-8 lg:pt-0 lg:pr-0 lg:ml-16 lg:mr-16 flex flex-col gap-0">
         <SectionTitle
           isAlignedLeft
           isWhite={hasBlueBackground}

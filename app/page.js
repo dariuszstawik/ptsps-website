@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <div className="my-10 md:hidden">
+      <div className="my-10 px-4 md:hidden">
         <NewsCard />
       </div>
       <div className="mb-32">

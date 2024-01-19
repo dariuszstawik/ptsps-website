@@ -26,8 +26,8 @@ export default function TestimonialCard({ name, title, img, children }) {
     //     <p className="text-gray-500 text-sm">{title}</p>
     //   </div>
     // </div>
-    <div className="w-full px-4">
-      <div className="p-8 mb-6 shadow rounded flex flex-col justify-between h-[540px] bg-slate-100">
+    <div className="w-full px-0 lg:px-4">
+      <div className="p-4 lg:p-8 mb-6 shadow rounded flex flex-col justify-between lg:min-h-[550px] bg-slate-100">
         <span className="block">
           {/* <img src="/quote.svg" alt="" className="mb-4 text-primaryOrange" /> */}
           <svg
@@ -47,9 +47,9 @@ export default function TestimonialCard({ name, title, img, children }) {
           </svg>
           <p className="my-4 leading-loose text-blueGray-400">{children}</p>
         </span>
-        <div className="flex items-center">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center">
           <img
-            className="h-16 w-16 rounded-full object-cover"
+            className="h-16 w-16 rounded-full object-cover ml-4 lg:ml-0 mt-4 lg:mt-0"
             // src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
             src={img}
             alt=""
