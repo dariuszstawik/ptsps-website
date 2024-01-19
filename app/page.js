@@ -5,6 +5,7 @@ import SectionTitle from "@/components/global-components/section-title";
 import TestimonialsCarousel from "@/components/global-components/testimonial-carousel";
 import CounterSection from "@/components/main-page/counter-section";
 import HeroSection from "@/components/main-page/hero-section";
+import NewsCard from "@/components/main-page/news-card";
 import ProjectsSection from "@/components/main-page/projects-section";
 import Testimonials from "@/components/main-page/testimonials";
 import { TeamSection } from "@/components/organizacja-page/team-section";
@@ -14,6 +15,9 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      <div className="my-10 md:hidden">
+        <NewsCard />
+      </div>
       <div className="mb-32">
         <CounterSection />
       </div>
