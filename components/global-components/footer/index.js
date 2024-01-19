@@ -17,8 +17,8 @@ export default function Footer() {
           <div className="container mx-auto px-10">
             <div className="flex flex-wrap mb-6 xl:mb-10 justify-between">
               <div className="mb-auto mr-4 w-full xl:w-1/4 ">
-                <div className="bg-slate-100 p-4 rounded mb-6">
-                  <Logo className="mt-4 w-64" />
+                <div className="bg-slate-100 p-4 rounded mb-6 flex mr-auto">
+                  <Logo className="mt-4" />
                 </div>
                 <div>
                   <p>
