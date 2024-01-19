@@ -60,20 +60,23 @@ export default function Footer() {
                   <h5 className="mb-4 font-bold">Biuro</h5>
                   <p className="leading-loose my-0">biuro@ptsps.pl</p>
                   <div className="flex gap-5 mt-6">
-                    <a href="https://www.facebook.com/kopalnia" target="_blank">
+                    <a
+                      href="https://www.facebook.com/superwizja.pracy.socjalnej"
+                      target="_blank"
+                    >
                       <img src="/facebook.svg" alt="facebook" className="w-8" />
                     </a>
                     <a
-                      href="https://www.youtube.com/@fundacjakopalniainicjatyw5380"
+                      href="https://www.linkedin.com/company/polskie-towarzystwo-superwizji-pracy-socjalnej/"
                       target="_blank"
                     >
                       <img src="/linkedin.svg" alt="linkedin" className="w-8" />
                     </a>
                     <a
-                      href="https://www.flickr.com/photos/153333342@N06/"
+                      href="https://www.instagram.com/superwizjaps/"
                       target="_blank"
                     >
-                      <img src="/instagram.svg" className="w-8 bg-white" />
+                      <img src="/instagram1.svg" className="w-8" />
                     </a>
                   </div>
                 </div>
@@ -89,7 +92,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className="w-screen flex-col justify-center items-center bg-gray-200 mt-1 py-8">
+      <div className="w-screen flex-col justify-center items-center bg-gray-200 mt-0 py-8">
         <p className="text-sm mx-auto text-center mb-2">
           © 2024. Polskie Towarzystwo Superwizji Pracy Socjalnej. All rights
           reserved.

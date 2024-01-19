@@ -6,7 +6,7 @@ import { Mail, MapPin, Phone, User } from "lucide-react";
 export default function Kontakt() {
   return (
     <div>
-      <PageHeader>Kontakt</PageHeader>
+      <PageHeader>Skontaktuj się</PageHeader>
       <div className="mb-16">
         <ParagraphWithImageOnTheLeft
           hasSubtitle

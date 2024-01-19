@@ -8,7 +8,7 @@ const PageHeader = ({ children }) => {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="uppercase text-3xl lg:text-4xl text-white z-20">
+      <h1 className="uppercase text-3xl lg:text-4xl text-white font-semibold z-20">
         {children}
       </h1>
     </div>
