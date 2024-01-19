@@ -17,40 +17,52 @@ export default function TestimonialCarousel() {
     slidesToScroll: 1,
     autoplay: false,
     prevArrow: (
-      <div className="w-24 h-24">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#1cabe2"
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-chevron-left"
-        >
-          <path d="m9 24-12-12 12-12" />
-        </svg>
-      </div>
+      // <div className="w-24 h-24">
+      //   <svg
+      //     xmlns="http://www.w3.org/2000/svg"
+      //     width="24"
+      //     height="24"
+      //     viewBox="0 0 24 24"
+      //     fill="none"
+      //     stroke="#1cabe2"
+      //     strokeWidth="4"
+      //     strokeLinecap="round"
+      //     strokeLinejoin="round"
+      //     className="lucide lucide-chevron-left"
+      //   >
+      //     <path d="m9 24-12-12 12-12" />
+      //   </svg>
+      // </div>
+      <img
+        width="60"
+        height="60"
+        src="https://img.icons8.com/ios-glyphs/60/chevron-left.png"
+        alt="chevron-left"
+      />
     ),
     nextArrow: (
-      <div className="w-32 bg-primaryBlue text-darkBlue">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#1cabe2"
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-chevron-right"
-        >
-          <path d="m9 24 12-12-12-12" />
-        </svg>
-      </div>
+      // <div className="w-32 bg-primaryBlue text-darkBlue">
+      //   <svg
+      //     xmlns="http://www.w3.org/2000/svg"
+      //     width="24"
+      //     height="24"
+      //     viewBox="0 0 24 24"
+      //     fill="none"
+      //     stroke="#1cabe2"
+      //     strokeWidth="4"
+      //     strokeLinecap="round"
+      //     strokeLinejoin="round"
+      //     className="lucide lucide-chevron-right"
+      //   >
+      //     <path d="m9 24 12-12-12-12" />
+      //   </svg>
+      // </div>
+      <img
+        width="60"
+        height="60"
+        src="https://img.icons8.com/ios-glyphs/60/chevron-right.png"
+        alt="chevron-right"
+      />
     ),
   };
   return (
