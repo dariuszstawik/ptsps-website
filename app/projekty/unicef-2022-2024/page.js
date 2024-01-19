@@ -45,70 +45,117 @@ export default function Unicef20222024() {
               spotkań).
             </p>
             <ul>
-              <li className="flex gap-2 mb-2 mt-4">
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>czas:</strong> 1.10.2022 – 14.03. 2024{" "}
+              <li className="flex flex-col xl:flex-row gap-2 mb-2 mt-4">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                  <strong>czas:</strong>
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">1.10.2022 – 14.03. 2024</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>budżet:</strong> 5 504 400 PLN{" "}
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2 mt-4">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                  <strong>budżet:</strong>
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">5 504 400 PLN</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>finansowanie:</strong> UNICEF (Biuro UNICEF ds.
-                Reagowania na Potrzeby Uchodźców w Polsce){" "}
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2 mt-4">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                  <strong>finansowanie:</strong>
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">
+                  UNICEF (Biuro UNICEF ds. Reagowania na Potrzeby Uchodźców w
+                  Polsce)
+                </span>
               </li>
-              <li className="flex gap-2 mb-2">
-                <Check className="text-primaryBlue w-4 mt-auto" />
-                <strong>status:</strong> w trakcie realizacji
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2 mt-4">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />{" "}
+                  <strong>status:</strong>
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">w trakcie realizacji</span>
               </li>
             </ul>
-            {/* <SectionTitle isAlignedLeft>Ludzie projektu</SectionTitle> */}
-            <div className="mb-6 mt-2">
+
+            <div className="mb-6 mt-6">
               <SectionSubtitle isAlignedLeft>Ludzie projektu</SectionSubtitle>
             </div>
             <ul>
-              <li className="flex gap-2 mb-2">
-                <Check className="text-primaryBlue w-4 mt-auto" />
-                <strong>autorzy projektu: </strong>Marcin Mikulski, Marek Jaros
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>autorzy projektu: </strong>
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">
+                  Marcin Mikulski, Marek Jaros
+                </span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>nadzór merytoryczny</strong>
-                (Chief Strategy Officer): Marek Jaros
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>nadzór merytoryczny </strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">(Chief Strategy Officer):</span>{" "}
+                <span className="ml-6 xl:ml-1">Marek Jaros</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>nadzór formalny </strong>(Project Managing Officer):
-                Marcin Mikulski
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>nadzór formalny </strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">
+                  (Project Managing Officer):
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">Marcin Mikulski</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>nadzór finansowy </strong>(Chief Financial Officer):
-                Katarzyna Biernat-Pilarska
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>nadzór finansowy </strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">(Chief Financial Officer):</span>{" "}
+                <span className="ml-6 xl:ml-1">Katarzyna Biernat-Pilarska</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>koordynacja </strong>(Project Manager): Agata Walerowicz
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>koordynacja </strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">(Project Manager):</span>{" "}
+                <span className="ml-6 xl:ml-1">Agata Walerowicz</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />
-                <strong>koordynacja superwizji</strong>: Agnieszka Ignasiak
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>koordynacja superwizji:</strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">Agnieszka Ignasiak</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong> koordynacja szkoleń</strong>: Aleksandra Sokolik
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>koordynacja szkoleń:</strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">Aleksandra Sokolik</span>
               </li>
-              <li className="flex gap-2 mb-2">
-                {" "}
-                <Check className="text-primaryBlue w-4 mt-auto" />{" "}
-                <strong>zarządzanie zgodnością </strong>(Compliance Manager):
-                Katarzyna Lis
+
+              <li className="flex flex-col xl:flex-row gap-2 mb-2">
+                <span className="flex gap-2">
+                  <Check className="text-primaryBlue w-4 mt-auto" />
+                  <strong>zarządzanie zgodnością </strong>{" "}
+                </span>{" "}
+                <span className="ml-6 xl:ml-1">(Compliance Manager):</span>{" "}
+                <span className="ml-6 xl:ml-1">Katarzyna Lis</span>
               </li>
             </ul>
           </SingleArticle>

@@ -19,7 +19,7 @@ export default function SideMenu({ itemsList, isBlue, className }) {
         {itemsList.map((item) => (
           <li
             key={item.title}
-            className={`text-xl p-4 border-b-2 m-0 ${
+            className={`text-lg p-4 border-b-2 m-0 ${
               isBlue
                 ? "hover:bg-white hover:text-slate-800"
                 : "hover:bg-primaryBlue hover:text-white"
