@@ -81,11 +81,11 @@ export default function Kontakt() {
               </SectionSubtitle>
             </div> */}
               <div className="flex flex-col gap-2">
-                <div className="">Osoba Zaufana: Aneta Zborowska</div>
+                <div className="">Osoba Zaufania: Aneta Zborowska</div>
                 {/* <div> Aneta Zborowska</div> */}
                 <div className="flex gap-2">
                   <Mail className="text-primaryBlue w-5" />{" "}
-                  osobazaufana@ptsps.pl
+                  osobazaufania@ptsps.pl
                   <Phone className="text-primaryBlue w-4" /> +48 500 273 018
                 </div>
               </div>

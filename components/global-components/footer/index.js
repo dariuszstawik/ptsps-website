@@ -72,19 +72,19 @@ export default function Footer() {
                     >
                       <img src="/linkedin.svg" alt="linkedin" className="w-8" />
                     </a>
-                    <a
+                    {/* <a
                       href="https://www.instagram.com/superwizjaps/"
                       target="_blank"
                     >
                       <img src="/instagram1.svg" className="w-8" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="mb-6 w-full md:w-1/2 xl:w-1/3 px-3">
                   <h5 className="mb-4 font-bold">Bezpieczny kontakt</h5>
                   {/* <p className="leading-loose my-0">Osoba zaufana:</p> */}
                   <p className="leading-loose my-0">Aneta Zborowska</p>
-                  <p className="leading-loose my-0">osobazaufana@ptsps.pl </p>
+                  <p className="leading-loose my-0">osobazaufania@ptsps.pl </p>
                   <p className="leading-loose my-0">+48 500 273 018</p>
                 </div>
               </div>
