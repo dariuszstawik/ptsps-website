@@ -5,6 +5,7 @@ import SectionTitle from "@/components/global-components/section-title";
 import TestimonialsCarousel from "@/components/global-components/testimonial-carousel";
 import CounterSection from "@/components/main-page/counter-section";
 import HeroSection from "@/components/main-page/hero-section";
+import HeroSliderSection from "@/components/main-page/hero-slider-section";
 import NewsCard from "@/components/main-page/news-card";
 import ProjectsSection from "@/components/main-page/projects-section";
 import Testimonials from "@/components/main-page/testimonials";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
+      {/* <HeroSliderSection /> */}
       <div className="my-10 px-4 md:hidden">
         <NewsCard />
       </div>
